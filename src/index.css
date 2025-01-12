@@ -1,0 +1,13 @@
+body {
+  margin: 0; /* Elimina los márgenes predeterminados del body */
+  padding: 0; /* Elimina el padding predeterminado */
+  box-sizing: border-box; /* Asegura que el padding se incluya en el tamaño total de los elementos */
+  overflow-x: hidden; /* Evita el scroll horizontal cuando algún elemento se desborda */
+}
+
+.header {
+  width: 100vw; /* Ocupa todo el ancho de la ventana */
+  height: 100vh; /* Ocupa toda la altura de la ventana */
+  background-size: cover; /* Hace que la imagen de fondo cubra todo el contenedor */
+  background-position: center;
+}
