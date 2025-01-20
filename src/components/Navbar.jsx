@@ -1,5 +1,3 @@
-import React from "react";
-
 const Navbar = ({ setView }) => {
   const total = 25000; // Total fijo de ejemplo
   const token = false; // Simulación de usuario no logueado

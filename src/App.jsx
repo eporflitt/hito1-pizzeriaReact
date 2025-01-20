@@ -8,7 +8,7 @@ import Register from "./components/Register";
 
 
 const App = () => {
-  const [view, setView] = useState("home"); // Maneja la vista actual
+  const [view, setView] = useState("home"); 
 
   return (
     <div>
