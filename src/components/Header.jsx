@@ -1,5 +1,3 @@
-
-import React from 'react';
 import './Header.css';
 import headerImage from '../assets/Header.jpg';
 

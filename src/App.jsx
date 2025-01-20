@@ -1,15 +1,25 @@
-import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Footer from './components/Footer';
+import { useState } from "react";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
+import Login from "./components/Login";
+import Register from "./components/Register";
 
-function App() {
+
+
+const App = () => {
+  const [view, setView] = useState("home"); // Maneja la vista actual
+
   return (
-    <div className="App">
-      <Navbar />
-      <Home />
+    <div>
+      <Navbar setView={setView} /> {/* Pasamos setView al Navbar */}
+      {view === "home" && <Home />}
+      {view === "login" && <Login />}
+      {view === "register" && <Register />}
       <Footer />
     </div>
   );
-}
+};
 
 export default App;
+
