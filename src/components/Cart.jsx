@@ -1,4 +1,5 @@
-import pizzaCart from "../data/pizzasCart"; // Array simulado para el carrito
+import React, { useState } from "react";
+import pizzaCart from "../components/pizzasCart"; // Array simulado para el carrito
 
 const Cart = () => {
   const [cart, setCart] = useState(pizzaCart);
